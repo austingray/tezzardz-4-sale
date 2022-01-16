@@ -19,8 +19,8 @@ import (
 	"github.com/hasura/go-graphql-client"
 )
 
-var region = "us-east-2"
-var bucketName = "tezzardz4sale"
+var region = os.Getenv("AWS_REGION")
+var bucketName = os.Getenv("AWS_S3_BUCKET")
 var fileName = "index"
 
 var consumerKey = os.Getenv("TWTR_CONSUMER_KEY")
